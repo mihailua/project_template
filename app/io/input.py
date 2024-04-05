@@ -3,6 +3,7 @@ def console_text_input():
 
     Function for user to input text
     saved in string format through console.
+
     :return:
     string - user input information
     User text typed in console from the function call
@@ -10,10 +11,15 @@ def console_text_input():
     '''
     pass
 
-def py_file_read_input():
+def py_file_read_input(filename):
     '''
      Function to input text from reading a file,
      text is saved in string format. Only python embedded methods used.
+
+     Input:
+     filename - name of the file to input information from
+        string
+
      :return:
      string - file input information
      '''
@@ -24,6 +30,11 @@ def pandas_file_read_input():
     '''
        Function to input text from reading a file,
        text is saved in string format. PANDAS methods used.
+
+     Input:
+     filename - name of the file to input information from
+        string
+
        :return:
        string - file input information
        '''
