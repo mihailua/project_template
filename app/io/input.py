@@ -1,3 +1,4 @@
+import pandas as pd
 def console_text_input():
     '''
 
@@ -9,7 +10,7 @@ def console_text_input():
     User text typed in console from the function call
     till user pressing enter.
     '''
-    pass
+    return input("User text: ")
 
 def py_file_read_input(filename):
     '''
@@ -23,10 +24,11 @@ def py_file_read_input(filename):
      :return:
      string - file input information
      '''
-    pass
+    with open(filename, 'r') as file:
+        text = file.read()
+    return text
 
-
-def pandas_file_read_input():
+def pandas_file_read_input(filename):
     '''
        Function to input text from reading a file,
        text is saved in string format. PANDAS methods used.
@@ -38,5 +40,8 @@ def pandas_file_read_input():
        :return:
        string - file input information
        '''
-    pass
+    df = pd.read_csv(filename)
+    return df.to_string()
+
+
 
